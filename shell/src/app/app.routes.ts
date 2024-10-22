@@ -5,6 +5,11 @@ export const routes: Routes = [
     {
         path: 'mfe1',
         loadComponent: () =>
-          loadRemoteModule('mfe1', './Component').then((m) => m.AppComponent),
-      },
+            loadRemoteModule('mfe1', './Component').then((m) => m.AppComponent),
+    },
+    {
+        path: 'mfe2',
+        loadComponent: () =>
+            loadRemoteModule('mfe2', './Component').then((m) => m.AppComponent),
+    }
 ];
